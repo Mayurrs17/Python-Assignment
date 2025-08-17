@@ -90,47 +90,78 @@ print("\nQuestion 11: Find the most frequent character in 'mississippi'")
 
 # Question 12: Check if two strings are anagrams: "listen" and "silent"
 print("\nQuestion 12: Check if two strings are anagrams: 'listen' and 'silent'")
-# Your code here
+text1 = "listen"
+text2 = "silent"
+if sorted(text1) == sorted(text2):
+    print("The two strings are anagrams")
+else:
+    print("The two strings are not anagrams")
 
 # Question 13: Capitalize first letter of each word in "python programming language"
 print("\nQuestion 13: Capitalize first letter of each word in 'python programming language'")
-# Your code here
+text = "python programming language"
+cap = text.title()
+print(f"Title case: {cap}")
 
 # Question 14: Count consonants in "Hello World"
 print("\nQuestion 14: Count consonants in 'Hello World'")
-# Your code here
+text = "Hello World"
+vowels = "aeiouAEIOU"
+count = sum(1 for char in text if char not in vowels and char.isalpha())
+print(f"String: {text}")
+print(f"Number of consonants: {count}")
 
 # Question 15: Find the longest word in "Python is a programming language"
 print("\nQuestion 15: Find the longest word in 'Python is a programming language'")
-# Your code here
+text = "Python is a programming language"
+words = text.split()
+longest_word = max(words, key=len)
+print(f"Longest word: {longest_word}")
 
 # Question 16: Remove all punctuation from "Hello, World! How are you?"
 print("\nQuestion 16: Remove all punctuation from 'Hello, World! How are you?'")
-# Your code here
+text = "Python is a programming language"
+words = text.split()
+longest_word = max(words, key=len)
+print(f"The longest word in the sentence is '{longest_word}'")
 
 # Question 17: Check if string starts with "Python"
 print("\nQuestion 17: Check if string starts with 'Python'")
-# Your code here
+text = "The world is beautiful"
+if text.startswith("Python"):
+    print("The string starts with 'Python'")
+else:
+    print("The string does not start with 'Python'")
 
 # Question 18: Find the index of first occurrence of 'o' in "Hello World"
 print("\nQuestion 18: Find the index of first occurrence of 'o' in 'Hello World'")
-# Your code here
+text = "Hello World"
+first_index = text.find("o")
+print(f"The first occurrence of 'o' in '{text}' is at index {first_index}")
 
 # Question 19: Split string "apple,banana,orange" by comma
 print("\nQuestion 19: Split string 'apple,banana,orange' by comma")
-# Your code here
+text = "apple,banana,orange"
+fruits = text.split(",")
+print(f"Splitted list: {fruits}")
 
 # Question 20: Join list ['Python', 'is', 'awesome'] with spaces
 print("\nQuestion 20: Join list ['Python', 'is', 'awesome'] with spaces")
-# Your code here
+words = ['Python', 'is', 'awesome']
+joined = " ".join(words)
+print(f"Joined string: {joined}")
 
 # Question 21: Check if string contains only digits: "12345"
 print("\nQuestion 21: Check if string contains only digits: '12345'")
-# Your code here
+text = "12345"
+is_digit = text.isdigit()
+print(is_digit)
 
 # Question 22: Check if string contains only letters: "HelloWorld"
 print("\nQuestion 22: Check if string contains only letters: 'HelloWorld'")
-# Your code here
+text = 'HelloWorld'
+x = text.isalpha()
+print(x)
 
 # Question 23: Convert "hello world" to "hElLo WoRlD" (alternating case)
 print("\nQuestion 23: Convert 'hello world' to 'hElLo WoRlD' (alternating case)")
